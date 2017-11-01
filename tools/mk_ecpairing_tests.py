@@ -1,11 +1,11 @@
-from ethereum.tools import tester
-from ethereum import opcodes
-from ethereum.utils import int_to_big_endian, encode_int32, big_endian_to_int
-from ethereum.tools import new_statetest_utils
+from rctoken.tools import tester
+from rctoken import opcodes
+from rctoken.utils import int_to_big_endian, encode_int32, big_endian_to_int
+from rctoken.tools import new_statetest_utils
 import json
 import py_pairing
-from ethereum.opcodes import GPAIRINGBASE as GPB
-from ethereum.opcodes import GPAIRINGPERPOINT as GPP
+from rctoken.opcodes import GPAIRINGBASE as GPB
+from rctoken.opcodes import GPAIRINGPERPOINT as GPP
 
 c = tester.Chain(env='metropolis')
 c.head_state.gas_limit = 10**8

@@ -8,7 +8,7 @@ try:
     import keys
 except BaseException:
     try:
-        import ethereum.keys as keys
+        import rctoken.keys as keys
     except BaseException:
         raise Exception("keys module not found")
 

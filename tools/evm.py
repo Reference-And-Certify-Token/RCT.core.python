@@ -2,17 +2,17 @@ import click
 import copy
 import json
 
-from ethereum import slogging
+from rctoken import slogging
 slogging.PRINT_FORMAT = '%(message)s'
 
-from ethereum import vm
-from ethereum.block import Block
-from ethereum.transactions import Transaction
-from ethereum.config import Env, default_config
-from ethereum.db import EphemDB
-from ethereum.genesis_helpers import initialize_genesis_keys, state_from_genesis_declaration, mk_genesis_data
-from ethereum.messages import VMExt, _apply_msg
-from ethereum.utils import bytearray_to_bytestr, normalize_address, encode_int256, encode_bin, scan_bin, zpad, encode_hex, decode_hex, big_endian_to_int, int_to_big_endian
+from rctoken import vm
+from rctoken.block import Block
+from rctoken.transactions import Transaction
+from rctoken.config import Env, default_config
+from rctoken.db import EphemDB
+from rctoken.genesis_helpers import initialize_genesis_keys, state_from_genesis_declaration, mk_genesis_data
+from rctoken.messages import VMExt, _apply_msg
+from rctoken.utils import bytearray_to_bytestr, normalize_address, encode_int256, encode_bin, scan_bin, zpad, encode_hex, decode_hex, big_endian_to_int, int_to_big_endian
 
 slogging.configure(':info,eth.vm.op:trace')
 
