@@ -9,3 +9,6 @@ https://github.com/ethereum/ethash/tarball/master
 pycryptodome==3.4.6
 coincurve>=5.0.1
 future
+colorama
+termcolor
+redis
