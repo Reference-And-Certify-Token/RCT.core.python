@@ -1,7 +1,7 @@
-from rctoken.tools import tester
-from rctoken import opcodes
-from rctoken.utils import int_to_big_endian, encode_int32, big_endian_to_int
-from rctoken.tools import new_statetest_utils
+from ethereum.tools import tester
+from ethereum import opcodes
+from ethereum.utils import int_to_big_endian, encode_int32, big_endian_to_int
+from ethereum.tools import new_statetest_utils
 import json
 
 c = tester.Chain(alloc=tester.minimal_alloc, env='metropolis')

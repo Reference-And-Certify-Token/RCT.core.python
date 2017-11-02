@@ -35,7 +35,7 @@ script:
   - make lint-minimal
   - make test-passing
   #- if [ -d .tox/$TOX_ENV/ ]; then cd .tox/$TOX_ENV && coverage erase; fi;
-  #- tox -e $TOX_ENV -- --ignore rctoken/tests/test_vm.py --ignore rctoken/tests/test_state.py
+  #- tox -e $TOX_ENV -- --ignore ethereum/tests/test_vm.py --ignore ethereum/tests/test_state.py
   #- tox -e $TOX_ENV -- ethereum/tests/test_vm.py
   #- tox -e $TOX_ENV -- ethereum/tests/test_state.py
   #- coverage report --show-missing

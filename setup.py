@@ -7,7 +7,7 @@ with open('README.rst') as readme_file:
 # requirements
 install_requires = set(x.strip() for x in open('requirements.txt'))
 install_requires_replacements = {
-    'https://github.com/rctoken/ethash/tarball/master': 'pyethash',
+    'https://github.com/ethereum/ethash/tarball/master': 'pyethash',
 }
 install_requires = [
     install_requires_replacements.get(
@@ -25,11 +25,11 @@ dependency_links = []
 version = '2.1.2'
 
 setup(
-    name="rctoken",
+    name="ethereum",
     packages=find_packages("."),
     description='Next generation cryptocurrency network',
     long_description=readme,
-    url='https://github.com/rctoken/pyethereum/',
+    url='https://github.com/ethereum/pyethereum/',
     install_requires=install_requires,
     tests_require=tests_require,
     dependency_links=dependency_links,
